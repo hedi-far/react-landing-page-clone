@@ -20,22 +20,76 @@ import house from './images/house.jpeg';
 import sky from './images/sky.jpg';
 
 const headerStyles = css`
+  font-family: 'Alata', sans-serif;
   height: 100vh;
   background-image: url(${house});
   background-repeat: no-repeat;
   background-size: cover;
+  color: #ffffff;
+
+  h6 {
+    font-size: 15px;
+  }
+
+  h1 {
+    font-size: 50px;
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+`;
+
+const underline = css`
+  text-decoration: underline;
 `;
 
 const navBarStyles = css`
   border-style: solid;
-  padding: 30px;
+  padding: 10px;
   border-color: #a6a6a6;
   border-width: 0px 0px 0.2px 0px;
+
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    color: #ffffff;
+
+    li {
+      padding: 10px;
+      list-style-type: none;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  img {
+    height: 22px;
+    width: auto;
+    float: left;
+    margin: 20px;
   }
 `;
 
-const logoStyles = css`
-  height: 25px;
+const intro1 = css`
+  margin: 100px;
+`;
+
+const lato = css`
+  font-family: 'Lato', sans-serif;
+  display: block;
+`;
+
+const pinkbutton = css`
+  background-color: #e7a285;
+  border-radius: 100%;
+  color: white;
+  padding: 3em 3.5em;
+  text-decoration: none;
+  margin: 30px;
 `;
 
 function App() {
@@ -46,26 +100,41 @@ function App() {
       <header css={headerStyles}>
         {/* nav bar  */}
         <nav css={navBarStyles}>
-          <img css={logoStyles} src={logo} alt="Safewatch Logo" />
-          <a href="http://www.example.com">HOME</a>
-          <a href="http://www.example.com">FEATURES</a>
-          <a href="http://www.example.com">FREE DDNS</a>
-          <a href="http://www.example.com">ABOUT</a>
-          <a href="http://www.example.com">LOGIN/SIGNUP</a>
+          <img src={logo} alt="Safewatch Logo" />
+          <ul>
+            <li>
+              <a href="http://www.example.com">HOME</a>
+            </li>
+            <li>
+              <a href="http://www.example.com">FEATURES</a>
+            </li>
+            <li>
+              <a href="http://www.example.com">FREE DDNS</a>
+            </li>
+            <li>
+              {' '}
+              <a href="http://www.example.com">ABOUT</a>
+            </li>
+            <li>
+              <a href="http://www.example.com">LOGIN/SIGNUP</a>
+            </li>
+          </ul>
         </nav>
         {/* intro section  */}
 
-        <h6>INTRODUCING SAFEWATCH</h6>
-        <h1>
-          Watch your car/your child/your dog/for packages/out for robbers.
-        </h1>
-        <h1>Get your peace of mind. </h1>
-        <h1>Level up your security cameras.</h1>
-        <a href="http://www.example.com">></a>
-        <h3>
-          Install in 5 minutes or less, no additional hardware required. Works
-          with all your existing cameras. Two weeks of trial period included.
-        </h3>
+        <div css={intro1}>
+          <h6>INTRODUCING SAFEWATCH</h6>
+          <h1>Watch your car</h1>
+          <h1 css={underline}>Get your peace of mind. </h1>
+          <h1>Level up your security cameras.</h1>
+          <a css={pinkbutton} href="http://www.example.com">
+            >
+          </a>
+          <h3 css={lato}>
+            Install in 5 minutes or less, no additional hardware required. Works
+            with all your existing cameras. Two weeks of trial period included.
+          </h3>
+        </div>
       </header>
 
       {/* section Unlimited detectors */}
@@ -80,7 +149,7 @@ function App() {
           it out! No credit card required.
         </h4>
         <a href="http://www.example.com">START NOW! ></a>
-        <img css={logoStyles} src={person} alt="" />
+        <img src={person} alt="" />
       </section>
 
       {/* section Create, Connect, Detect! */}
@@ -145,7 +214,7 @@ function App() {
       </section>
 
       <footer>
-        <img css={logoStyles} src={logo} alt="Safewatch logo" />
+        <img src={logo} alt="Safewatch logo" />
         <h4>hello@usesafewatch.com</h4>
         <a href="http://www.example.com">Privacy Policy></a>
         <img src={product_hunt} alt="Product Hunt logo" />
