@@ -19,16 +19,20 @@ import product_hunt from './images/product_hunt.png';
 import house from './images/house.jpeg';
 import sky from './images/sky.jpg';
 
+// CSS-in-JS
+
 const headerStyles = css`
   font-family: 'Alata', sans-serif;
-  height: 100vh;
+  height: 120vh;
   background-image: url(${house});
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color: #ffffff;
 
   h6 {
     font-size: 15px;
+    letter-spacing: 4px;
   }
 
   h1 {
@@ -37,6 +41,8 @@ const headerStyles = css`
 
   h3 {
     font-size: 30px;
+    line-height: 50px;
+    letter-spacing: 3px;
   }
 `;
 
@@ -49,11 +55,23 @@ const navBarStyles = css`
   padding: 10px;
   border-color: #a6a6a6;
   border-width: 0px 0px 0.2px 0px;
+}
+
+  }
 
   ul {
     display: flex;
     justify-content: flex-end;
     color: #ffffff;
+    margin-right: 200px;
+    letter-spacing: 3px;
+
+    /* makes urls in navbar a column when screen size decreases */
+    
+    @media screen and (max-width: 697px) {
+      flex-direction: column;
+    }
+  }
 
     li {
       padding: 10px;
@@ -64,7 +82,7 @@ const navBarStyles = css`
   a {
     text-decoration: none;
     color: #ffffff;
-  }
+   }
 
   img {
     height: 22px;
@@ -75,21 +93,25 @@ const navBarStyles = css`
 `;
 
 const intro1 = css`
-  margin: 100px;
+  margin-top: 150px;
+  margin-left: 200px;
 `;
 
 const lato = css`
+  display: flex;
+  justify-content: space-around;
   font-family: 'Lato', sans-serif;
-  display: block;
+  margin-top: 150px;
+  width: 800px;
 `;
 
 const pinkbutton = css`
   background-color: #e7a285;
   border-radius: 100%;
   color: white;
-  padding: 3em 3.5em;
+  padding: 1em 1.5em;
   text-decoration: none;
-  margin: 30px;
+  margin: 20px;
 `;
 
 function App() {
@@ -127,10 +149,10 @@ function App() {
           <h1>Watch your car</h1>
           <h1 css={underline}>Get your peace of mind. </h1>
           <h1>Level up your security cameras.</h1>
-          <a css={pinkbutton} href="http://www.example.com">
-            >
-          </a>
           <h3 css={lato}>
+            <a css={pinkbutton} href="http://www.example.com">
+              >>>
+            </a>
             Install in 5 minutes or less, no additional hardware required. Works
             with all your existing cameras. Two weeks of trial period included.
           </h3>
