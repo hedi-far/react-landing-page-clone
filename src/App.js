@@ -23,7 +23,7 @@ import sky from './images/sky.jpg';
 
 const headerStyles = css`
   font-family: 'Alata', sans-serif;
-  height: 120vh;
+  height: 100vh;
   background-image: url(${house});
   background-position: center;
   background-repeat: no-repeat;
@@ -31,17 +31,17 @@ const headerStyles = css`
   color: #ffffff;
 
   h6 {
-    font-size: 15px;
+    font-size: 12px;
     letter-spacing: 4px;
   }
 
   h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   h3 {
-    font-size: 30px;
-    line-height: 50px;
+    font-size: 20px;
+    line-height: 40px;
     letter-spacing: 3px;
   }
 `;
@@ -52,9 +52,10 @@ const underline = css`
 
 const navBarStyles = css`
   border-style: solid;
-  padding: 10px;
+  padding: 1px;
   border-color: #a6a6a6;
   border-width: 0px 0px 0.2px 0px;
+   
 }
 
   }
@@ -63,8 +64,9 @@ const navBarStyles = css`
     display: flex;
     justify-content: flex-end;
     color: #ffffff;
-    margin-right: 200px;
+    margin-right: 150px;
     letter-spacing: 3px;
+    font-size: 12px;
 
     /* makes urls in navbar a column when screen size decreases */
     
@@ -85,33 +87,85 @@ const navBarStyles = css`
    }
 
   img {
-    height: 22px;
+    height: 16px;
     width: auto;
     float: left;
-    margin: 20px;
+    margin: 20px 35px;
   }
 `;
 
 const intro1 = css`
-  margin-top: 150px;
-  margin-left: 200px;
+  margin-top: 100px;
+  margin-left: 250px;
 `;
 
 const lato = css`
   display: flex;
   justify-content: space-around;
   font-family: 'Lato', sans-serif;
-  margin-top: 150px;
-  width: 800px;
-`;
+  margin-top: 60px;
+  width: 750px;
+  }
 
-const pinkbutton = css`
+  a {
   background-color: #e7a285;
   border-radius: 100%;
   color: white;
-  padding: 1em 1.5em;
+  padding: 1.3em 2em;
   text-decoration: none;
-  margin: 20px;
+  margin: 10px 30px 10px -20px;
+  }
+`;
+
+const detectors = css`
+  height: 800px;
+  margin-top: 100px;
+  margin-left: 250px;
+  background-color: #E9DFDC;
+  
+  }
+  
+  h6 {
+    padding-top: 20px;
+    font-size: 11px;
+    letter-spacing: 3px;
+  }
+
+  h3 {
+    font-size: 25px;
+    width: 450px;
+    line-height: 50px;
+  }
+
+  h4 {
+    font-size: 20px;
+    line-height: 50px;
+  }
+
+  img {
+    float: right;
+    height: 400px;
+    margin-top: -450px;
+    margin-right: 400px;
+  }
+
+  a {
+    background-color: #e7a285;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 20px;
+    font-size: 10px;
+    letter-spacing: 3px;
+    font-weight: bold;
+
+  }
+`;
+
+const create = css`
+  height: 800px;
+  margin-top: 100px;
+  margin-left: 250px;
+  background-color: #e0dddc;
 `;
 
 function App() {
@@ -142,7 +196,6 @@ function App() {
             </li>
           </ul>
         </nav>
-        {/* intro section  */}
 
         <div css={intro1}>
           <h6>INTRODUCING SAFEWATCH</h6>
@@ -150,9 +203,7 @@ function App() {
           <h1 css={underline}>Get your peace of mind. </h1>
           <h1>Level up your security cameras.</h1>
           <h3 css={lato}>
-            <a css={pinkbutton} href="http://www.example.com">
-              >>>
-            </a>
+            <a href="http://www.example.com">></a>
             Install in 5 minutes or less, no additional hardware required. Works
             with all your existing cameras. Two weeks of trial period included.
           </h3>
@@ -160,22 +211,25 @@ function App() {
       </header>
 
       {/* section Unlimited detectors */}
-      <section>
+      <section css={detectors}>
         <h6>UNLIMITED DETECTORS</h6>
         <h3>
           For only $5/month per camera you can set up alerts for any kind of
           object, and get 14 days of footage backup.
         </h3>
         <h4>
-          15 days trial period included. You don't have to pay anything to try
-          it out! No credit card required.
+          15 days trial period included.
+          <br />
+          You don't have to pay anything to try it out!
+          <br />
+          No credit card required.
         </h4>
         <a href="http://www.example.com">START NOW! ></a>
         <img src={person} alt="" />
       </section>
 
       {/* section Create, Connect, Detect! */}
-      <section>
+      <section css={create}>
         <img src={pinkblitz} alt="" />
         <h1>Create, Connect, Detect!</h1>
         <h5>To start detecting is as easy as 1-2-3.</h5>
