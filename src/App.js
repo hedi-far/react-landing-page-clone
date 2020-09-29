@@ -119,9 +119,10 @@ const lato = css`
 
 const detectors = css`
   height: 800px;
+  width: 1200px;
   margin-top: 100px;
   margin-left: 250px;
-  background-color: #E9DFDC;
+  
   
   }
   
@@ -146,7 +147,7 @@ const detectors = css`
     float: right;
     height: 400px;
     margin-top: -450px;
-    margin-right: 400px;
+    margin-right: 300px;
   }
 
   a {
@@ -161,11 +162,15 @@ const detectors = css`
   }
 `;
 
-const create = css`
-  height: 800px;
-  margin-top: 100px;
-  margin-left: 250px;
-  background-color: #e0dddc;
+const danger = css`
+  color: black;
+  font-size: 80px;
+  text-align: center;
+  margin-top: 10px;
+  border-style: solid;
+  border-color: red;
+  border-with: 10px;
+  padding: 5px;
 `;
 
 function App() {
@@ -228,8 +233,10 @@ function App() {
         <img src={person} alt="" />
       </section>
 
+      <p css={danger}>Danger Zone! Styling ends here!</p>
+
       {/* section Create, Connect, Detect! */}
-      <section css={create}>
+      <section>
         <img src={pinkblitz} alt="" />
         <h1>Create, Connect, Detect!</h1>
         <h5>To start detecting is as easy as 1-2-3.</h5>
