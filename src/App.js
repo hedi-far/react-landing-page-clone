@@ -1,6 +1,7 @@
-import React from 'react';
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core';
+//eslint-disable-next-line no-unused-vars
+import React from 'react';
 
 // images
 import logo from './images/white_compact_word_logo.png';
@@ -17,6 +18,7 @@ import product_hunt from './images/product_hunt.png';
 
 // background images
 import house from './images/house.jpeg';
+//eslint-disable-next-line no-unused-vars
 import sky from './images/sky.jpg';
 
 // CSS-in-JS
