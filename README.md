@@ -12,6 +12,6 @@ Please run `yarn start` to start the application
 
 To Do:
 
-- [] Finish cloning the page.
-- [] Instead of <a href='www.example.com'></a>, copy/paste the URLs that the original  
-   landing page uses.
+- [ ] Finish cloning the page.
+- [ ] Instead of <a href='www.example.com'></a>, copy/paste the URLs that the original  
+       landing page uses.
