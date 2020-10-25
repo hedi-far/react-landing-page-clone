@@ -8,8 +8,14 @@ The following library has been used:
 
 [@emotion/core](https://www.npmjs.com/package/@emotion/core)
 
-Please run `yarn start` to start the application
+## CodeSandbox
+
+[Find the project on CodeSandbox](https://codesandbox.io/s/ecstatic-sea-7ykdv)
 
 ## To Do
 
 - [ ] Finish cloning the page.
+
+## How to start
+
+Please run `yarn start` to start the application
