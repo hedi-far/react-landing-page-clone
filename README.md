@@ -10,7 +10,7 @@ The following library has been used:
 
 ## CodeSandbox
 
-[Find the project on CodeSandbox](https://codesandbox.io/s/ecstatic-sea-7ykdv)
+[Find the project on CodeSandbox](https://codesandbox.io/s/github/hedi-far/react-landing-page-clone)
 
 ## To Do
 
