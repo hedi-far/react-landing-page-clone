@@ -10,6 +10,6 @@ The following library has been used:
 
 Please run `yarn start` to start the application
 
-To Do:
+## To Do
 
 - [ ] Finish cloning the page.
