@@ -1,7 +1,5 @@
 /** @jsx jsx */
 import { css, jsx } from '@emotion/core';
-//eslint-disable-next-line no-unused-vars
-import React from 'react';
 
 // images
 import logo from './images/white_compact_word_logo.png';
@@ -18,8 +16,6 @@ import product_hunt from './images/product_hunt.png';
 
 // background images
 import house from './images/house.jpeg';
-//eslint-disable-next-line no-unused-vars
-import sky from './images/sky.jpg';
 
 // CSS-in-JS
 
@@ -57,10 +53,6 @@ const navBarStyles = css`
   padding: 1px;
   border-color: #a6a6a6;
   border-width: 0px 0px 0.2px 0px;
-   
-}
-
-  }
 
   ul {
     display: flex;
@@ -71,11 +63,10 @@ const navBarStyles = css`
     font-size: 12px;
 
     /* makes urls in navbar a column when screen size decreases */
-    
+
     @media screen and (max-width: 697px) {
       flex-direction: column;
     }
-  }
 
     li {
       padding: 10px;
@@ -86,7 +77,7 @@ const navBarStyles = css`
   a {
     text-decoration: none;
     color: #ffffff;
-   }
+  }
 
   img {
     height: 16px;
@@ -107,15 +98,14 @@ const lato = css`
   font-family: 'Lato', sans-serif;
   margin-top: 60px;
   width: 750px;
-  }
 
   a {
-  background-color: #e7a285;
-  border-radius: 100%;
-  color: white;
-  padding: 1.3em 2em;
-  text-decoration: none;
-  margin: 10px 30px 10px -20px;
+    background-color: #e7a285;
+    border-radius: 100%;
+    color: white;
+    padding: 1.3em 2em;
+    text-decoration: none;
+    margin: 10px 30px 10px -20px;
   }
 `;
 
@@ -124,10 +114,7 @@ const detectors = css`
   width: 1200px;
   margin-top: 100px;
   margin-left: 250px;
-  
-  
-  }
-  
+
   h6 {
     padding-top: 20px;
     font-size: 11px;
@@ -160,7 +147,6 @@ const detectors = css`
     font-size: 10px;
     letter-spacing: 3px;
     font-weight: bold;
-
   }
 `;
 
@@ -171,7 +157,7 @@ const danger = css`
   margin-top: 10px;
   border-style: solid;
   border-color: red;
-  border-with: 10px;
+  border-width: 10px;
   padding: 5px;
 `;
 
